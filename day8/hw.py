@@ -1,6 +1,7 @@
-def find_number(list,number):
-    if number in list:
-        return True
+def find(list_,num_):
+    for num in list_:
+        if num == num_:
+            return [True,list_.index(num)]
     return False
-list1 = [1,2,3,4,5]
-print(find_number(list1,1))
+    
+print(find([1,2,3,4,5],1))
