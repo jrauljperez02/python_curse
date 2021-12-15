@@ -33,7 +33,7 @@ for _ in range(0,3):
     elif symbol not in symbols_list:
         print('Invalid symbol')
 
-    
+    time.sleep(3)
     os.system('clear')
 
     
