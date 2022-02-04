@@ -27,6 +27,10 @@ class Snake:
         new_segment.goto(position)
         self.segments.append(new_segment)
 
+    def extend(self):
+        #add a new segment everytime snake collision with food
+        self.add_segments(self.segments[-1].position())
+
     def reset(self):
         for seg in self.segments:
             seg.goto(1000,1000)
